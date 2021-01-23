@@ -7,9 +7,9 @@
   <session-factory>
     <!-- hibernate config -->
     <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/botify_playlists</property>
-    <property name="hibernate.connection.username">postgres</property>
-    <property name="hibernate.connection.password">postgres</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://ec2-52-212-157-46.eu-west-1.compute.amazonaws.com:5432/d68vitkpr5umqj</property>
+    <property name="hibernate.connection.username">mglaldzmfaoiou</property>
+    <property name="hibernate.connection.password">127925e92344ce57d6e57c73caf1a3add371f12e6cf1e819dafef82996854ec6</property>
     <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL94Dialect</property>
     <property name="show_sql">false</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
