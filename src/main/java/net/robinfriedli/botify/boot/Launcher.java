@@ -87,9 +87,9 @@ public class Launcher {
             // initialize property values
             String redirectUri = PropertiesLoadingService.requireProperty("REDIRECT_URI");
             String discordToken = System.getenv("DISCORD_TOKEN");
-            String clientId = PropertiesLoadingService.requireProperty("SPOTIFY_CLIENT_ID");
-            String clientSecret = PropertiesLoadingService.requireProperty("SPOTIFY_CLIENT_SECRET");
-            String youTubeCredentials = PropertiesLoadingService.requireProperty("YOUTUBE_CREDENTIALS");
+            String clientId = System.getenv("SPOTIFY_CLIENT_ID");
+            String clientSecret = System.getenv("SPOTIFY_CLIENT_SECRET");
+            String youTubeCredentials = System.getenv("YOUTUBE_API_TOKEN");
             String startupTasksPath = PropertiesLoadingService.requireProperty("STARTUP_TASKS_PATH");
             boolean modePartitioned = PropertiesLoadingService.loadBoolProperty("MODE_PARTITIONED");
             String httpHandlersPath = PropertiesLoadingService.requireProperty("HTTP_HANDLERS_PATH");
