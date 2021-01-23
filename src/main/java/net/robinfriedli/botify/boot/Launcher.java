@@ -86,7 +86,7 @@ public class Launcher {
         try {
             // initialize property values
             String redirectUri = PropertiesLoadingService.requireProperty("REDIRECT_URI");
-            String discordToken = PropertiesLoadingService.requireProperty("DISCORD_TOKEN");
+            String discordToken = System.getenv("DISCORD_TOKEN");
             String clientId = PropertiesLoadingService.requireProperty("SPOTIFY_CLIENT_ID");
             String clientSecret = PropertiesLoadingService.requireProperty("SPOTIFY_CLIENT_SECRET");
             String youTubeCredentials = PropertiesLoadingService.requireProperty("YOUTUBE_CREDENTIALS");
